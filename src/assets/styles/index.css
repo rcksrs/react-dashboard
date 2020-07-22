@@ -1,4 +1,5 @@
-@import "./primereact.css" ;
+@import './primereact.css';
+@import './bootstrap-grid.min.css';
 
 * {
   padding: 0;

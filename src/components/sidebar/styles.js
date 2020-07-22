@@ -8,7 +8,8 @@ export const Container = styled.div`
     background-color: #fff;
     border-right: 1px solid rgba(0,0,0,0.12);
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    z-index: 500;
 `;
 
 export const UserInfo = styled.div`

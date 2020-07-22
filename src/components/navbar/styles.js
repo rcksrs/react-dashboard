@@ -7,6 +7,7 @@ export const Container = styled.div`
     background-color: #3949ab; /* var(--primaryColor) */    
     padding: 0 30px;
     display: flex;
+    z-index: 1000;
 `;
 
 export const Left = styled.div`

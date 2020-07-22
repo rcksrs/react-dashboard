@@ -11,7 +11,7 @@
   --panelContentBorder: 1px solid #c8c8c8;
 
   --gray33: #333333;
-  --textGray: #f4f4f4;
+  --textGray: #414141;
 
   --white: #ffffff;
   --boxShadow:#8dcdff;
@@ -63,8 +63,8 @@ body .p-inputtext {
   font-size: 14px;
   color: black;
   background: var(--white);
-  padding: 0.6em;
-  border: 1px solid #a6a6a6;
+  padding: 0.8em;
+  border: 1px solid #b8b8b8;
   transition: border-color 0.2s;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -74,7 +74,7 @@ body .p-inputtext {
   border-radius: 3px;
 }
 body .p-inputtext:enabled:hover {
-  border-color: #212121;
+  border-color: var(--primaryColor);
 }
 body .p-inputtext:enabled:focus {
   outline: 0 none;
@@ -388,14 +388,14 @@ body .p-dropdown {
   border-radius: 3px;
 }
 body .p-dropdown:not(.p-disabled):hover {
-  border-color: #212121;
+  border-color: var(--primaryColor);
 }
 body .p-dropdown:not(.p-disabled).p-focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
+  /* -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
   -moz-box-shadow: 0 0 0 0.2em var(--boxShadow);
-  box-shadow: 0 0 0 0.2em var(--boxShadow);
+  box-shadow: 0 0 0 0.2em var(--boxShadow); */
   border-color: var(--primaryColor);
 }
 body .p-dropdown .p-dropdown-label {
@@ -1851,10 +1851,9 @@ body .p-toolbar .p-toolbar-separator {
 }
 body .p-card {
   background-color: var(--white);
-  color: var(--textGray);
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 1px -1px rgba(0, 0, 0, 0.1);
 }
 
 body .p-paginator {
@@ -1985,7 +1984,7 @@ body .p-datatable .p-datatable-footer {
   border-bottom-right-radius: 3px;
 }
 body .p-datatable .p-datatable-thead > tr > th {
-  padding: 0.571em 0.857em;
+  padding: 0.9em 0.857em;
   border: 1px solid #c8c8c8;
   font-weight: 700;
   color: var(--textGray);
@@ -1993,7 +1992,7 @@ body .p-datatable .p-datatable-thead > tr > th {
   text-align: center;
 }
 body .p-datatable .p-datatable-tfoot > tr > td {
-  padding: 0.571em 0.857em;
+  padding: 0.8em 0.857em;
   border: 1px solid #c8c8c8;
   font-weight: 700;
   color: var(--textGray);
@@ -2060,7 +2059,7 @@ body .p-datatable .p-datatable-tbody > tr {
 body .p-datatable .p-datatable-tbody > tr > td {
   background: inherit;
   border: 1px solid #c8c8c8;
-  padding: 0.429em 0.857em;
+  padding: 0.9em 0.857em;
 }
 body .p-datatable .p-datatable-tbody > tr > td .p-row-toggler {
   color: #848484;
@@ -3514,15 +3513,13 @@ body .p-slidemenu .p-menuitem-link:focus {
 body .p-menu {
   padding: 0;
   background-color: var(--white);
-  /* border: 1px solid #c8c8c8; */
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   width: calc(100% - 16px);
   margin: 8px;
 }
 body .p-menu .p-menuitem {
   margin: 0;
+  border-radius: 3px;
+  /* border: 1px solid red; */
 }
 body .p-menu.p-menu-overlay {
   border: 1px solid #c8c8c8;

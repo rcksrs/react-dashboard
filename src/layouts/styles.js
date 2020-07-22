@@ -7,6 +7,6 @@ export const Container = styled.div`
 export const Content = styled.div`
     width: 100%;
     min-height: 100%;
-    padding: 65px 0 0 260px;
-    background-color: #efefef;
+    padding: 105px 0 40px 260px;
+    background-color: #fdfdfd;
 `;
