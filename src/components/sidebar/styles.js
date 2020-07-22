@@ -37,7 +37,8 @@ export const UserInfo = styled.div`
 `;
 
 export const MenuArea = styled.div`
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
+  padding-top: 2px;
   width: 100%;
   height: 100%;
 `;

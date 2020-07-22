@@ -1606,91 +1606,103 @@ body .p-fieldset .p-fieldset-content {
   padding: 0;
 }
 body .p-accordion .p-accordion-tab {
-  margin-bottom: 2px;
+  margin: 0 8px 2px 8px;
+  /* margin-bottom: 2px; */
+
 }
 body .p-accordion .p-accordion-header a {
-  padding: 0.571em 1em;
-  border: 1px solid #c8c8c8;
+  padding: 0.8em 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px solid #c8c8c8; */
   color: var(--textGray);
-  background-color: var(--secondaryColor);
-  color: var(--textGray);
+  /* background-color: var(--secondaryColor); */
+  color: #546e7a;
   font-weight: 700;
+  font-size: 15px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  -moz-transition: background-color 0.2s, box-shadow 0.2s;
-  -o-transition: background-color 0.2s, box-shadow 0.2s;
-  -webkit-transition: background-color 0.2s, box-shadow 0.2s;
-  transition: background-color 0.2s, box-shadow 0.2s;
+  -moz-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+
+  background-position: center;
+  transition: background 0.8s;
 }
 body .p-accordion .p-accordion-header a .p-accordion-toggle-icon {
   color: #848484;
+  font-size: 12px;
+  /* border: 1px solid; */
 }
 body .p-accordion .p-accordion-header a .p-accordion-toggle-icon.pi-caret-right:before {
-  content: "";
+  content: "";
+  
 }
 body .p-accordion .p-accordion-header a .p-accordion-toggle-icon.pi-caret-down:before {
-  content: "";
+  content: "";
+  
 }
 body .p-accordion .p-accordion-header:not(.p-disabled) a:focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
+  /* -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
   -moz-box-shadow: 0 0 0 0.2em var(--boxShadow);
-  box-shadow: 0 0 0 0.2em var(--boxShadow);
+  box-shadow: 0 0 0 0.2em var(--boxShadow); */
+  
 }
 body .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover a {
-  background-color: #dbdbdb;
-  border: 1px solid #dbdbdb;
-  color: var(--textGray);
+  background-color: #f3f3f3;
+  /* border: 1px solid #f3f3f3; */
+  color: black;
 }
 body .p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover a .p-accordion-toggle-icon {
-  color: var(--textGray);
+  color: black;
 }
 body .p-accordion .p-accordion-header:not(.p-disabled).p-highlight {
-  margin-bottom: 0;
+  margin-bottom: 0;  
+}
+body .p-accordion .p-accordion-header:not(.p-disabled) a{
+  background: white radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+}
+body .p-accordion .p-accordion-header:not(.p-disabled):active a:active{
+  background-color: #dfdfdf;
+  background-size: 100%;
+  transition: background 0s;
 }
 body .p-accordion .p-accordion-header:not(.p-disabled).p-highlight a {
-  background-color: var(--primaryColor);
-  border: 1px solid var(--primaryColor);
-  color: var(--white);
-  -moz-border-radius-bottomleft: 0;
+  /* background-color: var(--primaryColor); */
+  /* border: 1px solid var(--primaryColor); */
+  color: var(--primaryColor);  
+  /* -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
   -moz-border-radius-bottomright: 0;
   -webkit-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0; */
 }
 body .p-accordion .p-accordion-header:not(.p-disabled).p-highlight a .p-accordion-toggle-icon {
-  color: var(--white);
+  color: var(--primaryColor);
+  transform: rotateZ(-90deg);
 }
 body .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover a {
-  border: 1px solid #005b9f;
-  background-color: #005b9f;
-  color: var(--white);
+  /* border: 1px solid #005b9f; */
+  /* background-color: #005b9f; */
+  /* color: var(--white); */
+  border: 0;
 }
 body .p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover a .p-accordion-toggle-icon {
-  color: var(--white);
+  color: var(--primaryColor);
 }
 body .p-accordion .p-accordion-content {
-  padding: 0.571em 1em;
-  border: 1px solid #c8c8c8;
+  /* border: 1px solid #c8c8c8; */
   background-color: var(--white);
-  color: var(--textGray);
-  padding: 0.571em 1em;
-  border-top: 0;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-border-radius-topright: 0;
-  -webkit-border-top-right-radius: 0;
-  border-top-right-radius: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  color: #546e7a;
+  padding: 0.6em 2em 1.2em 2em;
 }
 body .p-tabview.p-tabview-top, body .p-tabview.p-tabview-bottom, body .p-tabview.p-tabview-left, body .p-tabview.p-tabview-right {
   border: 0 none;
@@ -3451,7 +3463,7 @@ body .p-tieredmenu .p-menuitem-link .p-menuitem-text,
 body .p-contextmenu .p-menuitem-link .p-menuitem-text,
 body .p-megamenu .p-menuitem-link .p-menuitem-text,
 body .p-slidemenu .p-menuitem-link .p-menuitem-text {
-  color: var(--textGray);
+  color: black;
 }
 body .p-menu .p-menuitem-link .p-menuitem-icon,
 body .p-menubar .p-menuitem-link .p-menuitem-icon,
@@ -3459,8 +3471,9 @@ body .p-tieredmenu .p-menuitem-link .p-menuitem-icon,
 body .p-contextmenu .p-menuitem-link .p-menuitem-icon,
 body .p-megamenu .p-menuitem-link .p-menuitem-icon,
 body .p-slidemenu .p-menuitem-link .p-menuitem-icon {
-  color: var(--textGray);
-  margin-right: 0.5em;
+  color: black;
+  margin-right: 0.6em;
+  /* font-size: 16px; */
 }
 body .p-menu .p-menuitem-link:hover,
 body .p-menubar .p-menuitem-link:hover,
@@ -3468,7 +3481,7 @@ body .p-tieredmenu .p-menuitem-link:hover,
 body .p-contextmenu .p-menuitem-link:hover,
 body .p-megamenu .p-menuitem-link:hover,
 body .p-slidemenu .p-menuitem-link:hover {
-  background-color: #eaeaea;
+  background-color: #eeeeee;
 }
 body .p-menu .p-menuitem-link:hover .p-menuitem-text,
 body .p-menubar .p-menuitem-link:hover .p-menuitem-text,
@@ -3476,7 +3489,7 @@ body .p-tieredmenu .p-menuitem-link:hover .p-menuitem-text,
 body .p-contextmenu .p-menuitem-link:hover .p-menuitem-text,
 body .p-megamenu .p-menuitem-link:hover .p-menuitem-text,
 body .p-slidemenu .p-menuitem-link:hover .p-menuitem-text {
-  color: var(--textGray);
+  color: black;
 }
 body .p-menu .p-menuitem-link:hover .p-menuitem-icon,
 body .p-menubar .p-menuitem-link:hover .p-menuitem-icon,
@@ -3484,7 +3497,7 @@ body .p-tieredmenu .p-menuitem-link:hover .p-menuitem-icon,
 body .p-contextmenu .p-menuitem-link:hover .p-menuitem-icon,
 body .p-megamenu .p-menuitem-link:hover .p-menuitem-icon,
 body .p-slidemenu .p-menuitem-link:hover .p-menuitem-icon {
-  color: var(--textGray);
+  color: black;
 }
 body .p-menu .p-menuitem-link:focus,
 body .p-menubar .p-menuitem-link:focus,
@@ -3494,17 +3507,19 @@ body .p-megamenu .p-menuitem-link:focus,
 body .p-slidemenu .p-menuitem-link:focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: inset 0 0 0 0.2em var(--boxShadow);
+  /* -webkit-box-shadow: inset 0 0 0 0.2em var(--boxShadow);
   -moz-box-shadow: inset 0 0 0 0.2em var(--boxShadow);
-  box-shadow: inset 0 0 0 0.2em var(--boxShadow);
+  box-shadow: inset 0 0 0 0.2em var(--boxShadow); */
 }
 body .p-menu {
   padding: 0;
   background-color: var(--white);
-  border: 1px solid #c8c8c8;
+  /* border: 1px solid #c8c8c8; */
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  width: calc(100% - 16px);
+  margin: 8px;
 }
 body .p-menu .p-menuitem {
   margin: 0;
@@ -3517,17 +3532,14 @@ body .p-menu.p-menu-overlay {
 }
 body .p-menu .p-submenu-header {
   margin: 0;
+  margin-top: 15px;
   padding: 0.714em 0.857em;
-  color: var(--textGray);
-  background-color: var(--secondaryColor);
+  color: rgb(122, 122, 122);
+  text-transform: uppercase;
+  font-size: 12px;
+  /* background-color: var(--secondaryColor); */
   font-weight: 700;
   border: 0 none;
-  -moz-border-radius-topleft: 3px;
-  -webkit-border-top-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -webkit-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
 }
 body .p-menu .p-menu-separator {
   border: 1px solid #c8c8c8;

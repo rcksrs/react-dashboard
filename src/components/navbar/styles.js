@@ -4,7 +4,7 @@ export const Container = styled.div`
     position: fixed;
     height: 65px;
     width: 100%;
-    background-color: #3949ab;
+    background-color: #3949ab; /* var(--primaryColor) */    
     padding: 0 30px;
     display: flex;
 `;

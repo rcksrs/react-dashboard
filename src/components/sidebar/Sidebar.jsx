@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, UserInfo, MenuArea } from './styles'
+import { Menu } from 'primereact/menu';
 
-export default function Sidebar({usuario, cargo, imagem}) {
+export default function Sidebar({usuario, cargo, imagem, items}) {
     return (
         <Container>
             <UserInfo>
@@ -10,7 +11,7 @@ export default function Sidebar({usuario, cargo, imagem}) {
                 <span>{cargo}</span>
             </UserInfo>
             <MenuArea>
-
+                <Menu model={items}/>
             </MenuArea>
         </Container>
     )
