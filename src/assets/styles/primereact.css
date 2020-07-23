@@ -103,14 +103,14 @@ body .p-checkbox .p-checkbox-box {
   transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 body .p-checkbox .p-checkbox-box:not(.p-disabled):hover {
-  border-color: #212121;
+  border-color: var(--primaryColor);
 }
 body .p-checkbox .p-checkbox-box:not(.p-disabled).p-focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
+  /* -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
   -moz-box-shadow: 0 0 0 0.2em var(--boxShadow);
-  box-shadow: 0 0 0 0.2em var(--boxShadow);
+  box-shadow: 0 0 0 0.2em var(--boxShadow); */
   border-color: var(--primaryColor);
 }
 body .p-checkbox .p-checkbox-box.p-highlight {
@@ -126,10 +126,16 @@ body .p-checkbox .p-checkbox-box.p-highlight:not(.p-disabled):hover {
 body .p-checkbox .p-checkbox-box .p-checkbox-icon {
   overflow: hidden;
   position: relative;
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transform: translateY(3px);
 }
 body .p-checkbox-label {
-  margin: 0 0 0 0.5em;
+  text-transform: unset;
+  margin: 0 0 0 0.6em;
+  font-size: 14px;
 }
 body .p-radiobutton {
   display: inline-block;
@@ -872,7 +878,7 @@ body .p-slider:not(.p-disabled) .p-slider-handle:hover {
 }
 body .p-datepicker {
   padding: 0.857em;
-  min-width: 20em;
+  min-width: 24em !important;
   background-color: var(--white);
   color: var(--textGray);
   border: 1px solid #a6a6a6;
@@ -1857,9 +1863,9 @@ body .p-card {
 }
 
 body .p-paginator {
-  background-color: var(--secondaryColor);
-  border: 1px solid #c8c8c8;
-  padding: 0;
+  /* background-color: var(--secondaryColor); */
+  /* border: 1px solid #c8c8c8; */
+  padding: 10px 0;
 }
 body .p-paginator .p-paginator-first,
 body .p-paginator .p-paginator-prev,
@@ -1940,7 +1946,7 @@ body .p-paginator .p-paginator-pages .p-paginator-page {
   transition: background-color 0.2s, box-shadow 0.2s;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
+  border-radius: 3px;
 }
 body .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
   background-color: var(--primaryColor);

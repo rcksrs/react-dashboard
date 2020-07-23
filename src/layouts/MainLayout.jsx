@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { useHistory } from "react-router-dom"
 import { Navbar, Sidebar } from 'components'
 import { Container, Content } from './styles'
@@ -29,17 +29,14 @@ export default function MainLayout(props) {
 
     return (
         <Container>
-            <Navbar title="Rondas SEAP" logo="https://react-material-kit.devias.io/static/logo.svg">
-                {/* <NavItems>
-                    <NavItem title="Item 1" />
-                    <NavItem title="Item 2" />
-                    <NavItem title="Item 3" />
-                </NavItems>
-                <NavOptions>
-                    <NavOption icon="icon_1" />
-                    <NavOption icon="icon_2" />
-                </NavOptions>
-                <NavUserInfo image="user_image" title="Katarina Smith" /> */}
+            <Navbar title="Logo" logo="https://react-material-kit.devias.io/static/logo.svg">
+                {/*
+                    <NavOptions>
+                        <NavOption icon="icon_1" />
+                        <NavOption icon="icon_2" />
+                    </NavOptions>
+                    <NavUserInfo image="user_image" title="Katarina Smith" /> 
+                */}
             </Navbar>
             <Sidebar items={items} usuario="Katarina Smith" cargo="Sales Manager" imagem="https://react-material-kit.devias.io/static/images/avatars/avatar_6.png" />
             <Content>
