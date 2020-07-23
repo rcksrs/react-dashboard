@@ -3340,9 +3340,9 @@ body .p-lightbox .p-lightbox-content-wrapper .p-lightbox-content.p-lightbox-load
 }
 
 body .p-breadcrumb {
-  background-color: var(--white);
-  border: 1px solid #c8c8c8;
-  padding: 0.571em 1em;
+  /* background-color: var(--white); */
+  /* border: 1px solid #c8c8c8; */
+  padding: 0 0 1.5em 0;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -3350,10 +3350,10 @@ body .p-breadcrumb {
 body .p-breadcrumb ul li .p-menuitem-link {
   color: var(--textGray);
   margin: 0;
-  -moz-transition: box-shadow 0.2s;
+  /* -moz-transition: box-shadow 0.2s;
   -o-transition: box-shadow 0.2s;
   -webkit-transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s; */
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -3361,17 +3361,22 @@ body .p-breadcrumb ul li .p-menuitem-link {
 body .p-breadcrumb ul li .p-menuitem-link:focus {
   outline: 0 none;
   outline-offset: 0;
-  -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
+  /* -webkit-box-shadow: 0 0 0 0.2em var(--boxShadow);
   -moz-box-shadow: 0 0 0 0.2em var(--boxShadow);
-  box-shadow: 0 0 0 0.2em var(--boxShadow);
+  box-shadow: 0 0 0 0.2em var(--boxShadow); */
 }
 body .p-breadcrumb ul li.p-breadcrumb-chevron {
   margin: 0 0.5em 0 0.5em;
   color: #848484;
+  font-size: 12px;
 }
 body .p-breadcrumb ul li:first-child a {
   color: #848484;
   margin: 0;
+  font-size: 12px;
+}
+body .p-breadcrumb ul li:last-child a {
+  color: var(--primaryColor);
 }
 body .p-breadcrumb ul li .p-menuitem-icon {
   color: #848484;
@@ -3445,16 +3450,18 @@ body .p-tieredmenu .p-menuitem-link,
 body .p-contextmenu .p-menuitem-link,
 body .p-megamenu .p-menuitem-link,
 body .p-slidemenu .p-menuitem-link {
-  padding: 0.714em 0.857em;
+  padding: 0.9em 0.857em;
   color: var(--textGray);
   font-weight: normal;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0;
+  border-radius: 3px;
   -moz-transition: background-color 0.2s, box-shadow 0.2s;
   -o-transition: background-color 0.2s, box-shadow 0.2s;
   -webkit-transition: background-color 0.2s, box-shadow 0.2s;
   transition: background-color 0.2s, box-shadow 0.2s;
+  background-position: center;
+  transition: background 0.8s;
 }
 body .p-menu .p-menuitem-link .p-menuitem-text,
 body .p-menubar .p-menuitem-link .p-menuitem-text,
@@ -3480,7 +3487,18 @@ body .p-tieredmenu .p-menuitem-link:hover,
 body .p-contextmenu .p-menuitem-link:hover,
 body .p-megamenu .p-menuitem-link:hover,
 body .p-slidemenu .p-menuitem-link:hover {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
+  background: #eeeeee radial-gradient(circle, transparent 1%, #eeeeee 1%) center/15000%;
+}
+body .p-menu .p-menuitem-link:active,
+body .p-menubar .p-menuitem-link:active,
+body .p-tieredmenu .p-menuitem-link:active,
+body .p-contextmenu .p-menuitem-link:active,
+body .p-megamenu .p-menuitem-link:active,
+body .p-slidemenu .p-menuitem-link:active {
+  background-color: #d4d4d4;
+  background-size: 100%;
+  transition: background 0s;
 }
 body .p-menu .p-menuitem-link:hover .p-menuitem-text,
 body .p-menubar .p-menuitem-link:hover .p-menuitem-text,
@@ -3518,7 +3536,7 @@ body .p-menu {
 }
 body .p-menu .p-menuitem {
   margin: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   /* border: 1px solid red; */
 }
 body .p-menu.p-menu-overlay {

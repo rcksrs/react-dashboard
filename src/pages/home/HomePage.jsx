@@ -1,11 +1,12 @@
 import React from 'react'
-import {Card} from 'primereact/card';
+import {Card} from 'primereact/card'
 import {InputText} from 'primereact/inputtext'
 import {InputTextarea} from 'primereact/inputtextarea'
 import {Dropdown} from 'primereact/dropdown'
-import {DataTable} from 'primereact/datatable';
-import {Column} from 'primereact/column';
+import {DataTable} from 'primereact/datatable'
+import {Column} from 'primereact/column'
 import {Button} from 'primereact/button'
+import { BreadCrumb } from 'primereact/breadcrumb'
 
 export default function HomePage() {
     const cars = [
@@ -21,8 +22,37 @@ export default function HomePage() {
         {"brand": "Fiat", "year": 2013, "color": "Red", "vin": "245t2s"}
     ]
 
+    const breadCrumbItems = [
+        { label: 'Categories' },
+        { label: 'Sports' },
+        { label: 'Football' },
+        { label: 'Countries' }
+    ];
+    
+    const breadCrumbHome = { icon: 'pi pi-home', url: 'https://www.primefaces.org/primereact' }
+
     return (
         <>
+            <div className="p-fluid p-grid" style={{marginBottom: '20px'}}>
+                <div className="p-col-12">
+                    <h2>Dashboard</h2>
+                </div>
+                <div className="p-col-12">
+                    <BreadCrumb model={breadCrumbItems} home={breadCrumbHome}/>
+                </div>
+                <div className="p-col-3">
+                    <Card title="Card 1">Content</Card>
+                </div>
+                <div className="p-col-3">
+                    <Card title="Card 2">Content</Card>
+                </div>
+                <div className="p-col-3">
+                    <Card title="Card 3">Content</Card>
+                </div>
+                <div className="p-col-3">
+                    <Card title="Card 4">Content</Card>
+                </div>
+            </div>
             <Card title="Title">
                 <div className="p-fluid p-formgrid p-grid">
                     <div className="p-field p-col-12 p-md-6">
@@ -69,12 +99,12 @@ export default function HomePage() {
                 </div>
             </Card>
 
-            <Card title="Title 2" style={{marginTop: '20px'}}>
-                <DataTable value={cars}>
-                    <Column field="vin" header="Vin" />
-                    <Column field="year" header="Year" />
-                    <Column field="brand" header="Brand" />
-                    <Column field="color" header="Color" />
+            <Card title="Table of Content" subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style={{marginTop: '20px'}}>
+                <DataTable value={cars} paginator rows={5}>
+                    <Column field="vin" header="Vin" sortable/>
+                    <Column field="year" header="Year" sortable/>
+                    <Column field="brand" header="Brand" sortable/>
+                    <Column field="color" header="Color" sortable/>
                 </DataTable>
             </Card>
         </>

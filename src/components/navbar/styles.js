@@ -29,8 +29,8 @@ export const Right = styled.div`
 `;
 
 export const Logo = styled.div`
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: url('${props => props.src}') no-repeat center;
     background-size: contain;
     position: relative;
@@ -38,9 +38,9 @@ export const Logo = styled.div`
         content: '${props => props.title}';
         position: absolute;
         width: 175px;
-        font-size: 22px;
+        font-size: 20px;
         color: white;
-        left: ${props => props.src ? '60px' : '0px'};
-        top: 22%;
+        left: ${props => props.src ? '55px' : '0px'};
+        top: 20%;
     }
 `;

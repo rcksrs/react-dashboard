@@ -8,5 +8,5 @@ export const Content = styled.div`
     width: 100%;
     min-height: 100%;
     padding: 105px 0 40px 260px;
-    background-color: #fdfdfd;
+    background-color: #f5f5f5;
 `;
