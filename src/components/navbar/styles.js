@@ -22,7 +22,7 @@ export const Left = styled.div`
 export const Right = styled.div`
     width: 50%;
     height: 100%;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     display: flex;
     align-items: center;
     justify-content: flex-end;

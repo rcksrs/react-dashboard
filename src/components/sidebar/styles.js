@@ -38,8 +38,26 @@ export const UserInfo = styled.div`
 `;
 
 export const MenuArea = styled.div`
-  /* border: 1px dashed red; */
-  padding-top: 2px;
-  width: 100%;
-  height: 100%;
+    padding-top: 2px;
+    width: 100%;
+    height: 100%;
+    max-height: 670px;
+    overflow-y: auto;
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 `;
