@@ -29,7 +29,7 @@ export default function MainLayout(props) {
 
     return (
         <Container>
-            <Navbar title="Logo" logo="https://react-material-kit.devias.io/static/logo.svg">
+            <Navbar items={items} title="Logo" logo="https://react-material-kit.devias.io/static/logo.svg">
                 {/*
                     <NavOptions>
                         <NavOption icon="icon_1" />

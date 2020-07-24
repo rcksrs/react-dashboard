@@ -10,6 +10,19 @@ export const Container = styled.div`
     z-index: 1000;
 `;
 
+export const Toggle = styled.div`
+    .p-button {
+        background-color: transparent;
+        border: 0;
+        display: none;
+        @media (max-width:850px) {
+            display: block;
+            margin-right: 15px;
+        }
+    }
+    
+`;
+
 export const Left = styled.div`
     width: 50%;
     height: 100%;

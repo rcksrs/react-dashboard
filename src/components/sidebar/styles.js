@@ -10,6 +10,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     z-index: 500;
+    @media (max-width:850px) {
+        display: none;
+    }
 `;
 
 export const UserInfo = styled.div`
